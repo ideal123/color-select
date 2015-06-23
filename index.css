@@ -1,0 +1,72 @@
+.data-color-group {
+  position: relative;
+  display: inline-block;
+}
+.data-color-group .data-color-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  float: left;
+}
+.data-color-group.open .data-color-head {
+  -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.data-color-group.open .data-color-menu {
+  display: block;
+}
+.data-color-menu {
+  min-width: 160px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.data-color-menu li {
+  line-height: 20px;
+  padding: 10px 25px;
+}
+.data-color-menu li:hover {
+  background-color: #007bb9;
+}
+.data-color-head {
+  display: inline-block;
+  width: 64px;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  border: 1px solid #ccc;
+  line-height: 20px;
+  text-align: right;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.data-color-head:hover {
+  text-decoration: none;
+}
+.data-color-head .color-caret {
+  margin-top: 8px;
+  margin-left: 0;
+}
+.color-caret {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  vertical-align: top;
+  border-top: 4px solid #000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
