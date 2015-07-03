@@ -1,0 +1,60 @@
+// 圆角
+.border-radius(@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	border-radius: @radius;
+}
+// 圆角的四角
+.border-radius-custom(@lt: 5px, @rt: 5px, @rb: 5px, @lb: 5px) {
+	-webkit-border-radius: @lt @rt @rb @lb;
+	-moz-border-radius: @lt @rt @rb @lb;
+	-ms-border-radius: @lt @rt @rb @lb;
+	border-radius: @lt @rt @rb @lb;
+}
+// 外阴影
+.box-shadow(@x: 0, @y: 0, @blur: 8px, @opacity) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @opacity);
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @opacity);
+	-ms-box-shadow: @x @y @blur rgba(0, 0, 0, @opacity);
+	box-shadow: @x @y @blur rgba(0, 0, 0, @opacity);
+}
+// 内阴影
+.inner-shadow(@x: 0, @y: 0, @blur: 8px, @opacity) {
+	-webkit-box-shadow: inset @x @y @blur rgba(0, 0, 0, @opacity);
+	-moz-box-shadow: inset @x @y @blur rgba(0, 0, 0, @opacity);
+	-ms-box-shadow: inset @x @y @blur rgba(0, 0, 0, @opacity);
+	box-shadow: inset @x @y @blur rgba(0, 0, 0, @opacity);
+}
+// 颜色渐变
+.gradient(@direction: left, @startColor, @endColor) {
+	background-color: @startColor;
+	background-image: -webkit-gradient(@direction, @startColor, @endColor);
+	background-image: -moz-gradient(@direction, @startColor, @endColor);
+	background-image: -ms-gradient(@direction, @startColor, @endColor);
+	background-image: gradient(@direction, @startColor, @endColor);
+}
+// 三角形
+.trangle(@width: 8px, @top: #000, @right: transparent, @bottom: transparent, @left: transparent) {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: @width;
+	border-color: @top @right @bottom @left;
+}
+// 多余文字隐藏
+.text-overflow() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
