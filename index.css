@@ -2,6 +2,8 @@
   position: relative;
   display: inline-block;
 }
+
+
 .data-color-group .data-color-menu {
   display: none;
   position: absolute;
